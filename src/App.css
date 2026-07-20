@@ -1,0 +1,44 @@
+/* App-specific styles */
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure sections stack properly */
+main > section {
+  position: relative;
+}
+
+/* Image hover effects */
+.card-rounded img {
+  transition: transform 0.5s ease;
+}
+
+.group:hover .card-rounded img {
+  transform: scale(1.05);
+}
+
+/* Form focus states */
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(193, 154, 69, 0.3);
+}
+
+/* Button hover transitions */
+button,
+a {
+  transition: all 0.3s ease;
+}
+
+/* Prevent text selection on interactive elements */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Loading state for images */
+img {
+  background-color: #F5F5F2;
+}
